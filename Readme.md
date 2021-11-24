@@ -1,4 +1,4 @@
-# DWEC JavaScript
+# JavaScript DWEC
 
 Ejercicios de JavaScript de Desarrollo Web Entorno Cliente.
 
