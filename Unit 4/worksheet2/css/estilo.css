@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(206, 191, 169);
+}
+header{
+    text-align: center;
+}
+h1{
+    color: rgb(75, 50, 13);
+}
+header img{
+    height: 15%;
+    width: 15%;
+}
+h2{
+    color: rgb(124, 91, 41);
+}
+form input{
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+form label{
+    color: rgb(92, 67, 32);
+}
+form button {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(77, 52, 13);
+    background-color: rgb(196, 164, 120);
+}
+p{
+    text-align: center;
+    color: rgb(122, 100, 66);
+}
+div{
+    display: inline-block;
+    margin: 30px;
+}
+#d{
+    float: right;
+}
+
+

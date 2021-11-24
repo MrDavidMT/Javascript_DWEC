@@ -1,0 +1,18 @@
+#img{
+    position:relative;
+    left:10%;
+    width:300px;
+    height:300px;
+}
+button img{
+    width:20 px;
+    height:20px;
+}
+#i{
+    position: relative;
+}
+#d{
+    position: relative;
+    top:40%;
+    left:20%
+}
