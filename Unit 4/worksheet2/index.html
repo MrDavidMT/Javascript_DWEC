@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Reading List</title>
-    <script src="booklist.js "></script>
+    <script src="index.js" type="module"></script>
     <link rel="stylesheet" href="./css/estilo.css">
+    
+    <title>The Reading List</title>
+    
 </head>
 <body>
     <header>
@@ -14,25 +16,27 @@
         <img src="./img/libro.png" alt="libro">
     </header>
     <div>
-    <div>
-        <h2>Book</h2>
-        <form >
-            <label for="title">Title</label><br>
-            <input type="text" pattern="[a-zA-Z]" required><br>
-            <label for="author">Author</label><br>
-            <input type="text" required><br>
-            <label for="Genre">Genre</label><br>
-            <input type="Genre"><br>
-            <button type="submit">Add book</button>
-        </form>
-    </div>
-    <div id="d">
-        <h2>My Reading List</h2>
-        <ul>
+        <div>
+            <h2>Book</h2>
+            <form >
+                <label for="title">Title</label><br>
+                <input type="text" id="title" required><br>
+                <label for="author">Author</label><br>
+                <input type="text" id="author" required><br>
+                <label for="genre">Genre</label><br>
+                <input type="text" id="genre" required><br>
+                <button type="submit">Add book</button>
+            </form>
+            <p id='mensaje'></p>
+        </div>
+        <div id="d">
+            <h2>My Reading List</h2>
+            <ul>
 
-        </ul>
-        <p>Books read: 0</p>
-    </div>
+            </ul>
+            <p id='read'></p>
+            <button>Read next book</button>
+        </div>
     </div>
 </body>
 </html>

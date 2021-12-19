@@ -12,6 +12,7 @@ header img{
     width: 15%;
 }
 h2{
+    text-align: center;
     color: rgb(124, 91, 41);
 }
 form input{
@@ -22,7 +23,7 @@ form input{
 form label{
     color: rgb(92, 67, 32);
 }
-form button {
+button {
     padding-left: 3%;
     padding-right: 3%;
     margin-top: 10px;
@@ -34,12 +35,36 @@ p{
     text-align: center;
     color: rgb(122, 100, 66);
 }
+li p{
+    font-size: 10px;
+    text-align: end;
+    color: rgb(122, 100, 66);
+}
 div{
     display: inline-block;
     margin: 30px;
 }
 #d{
     float: right;
+    width: 500px;
+    text-align: center;
+}
+li{
+    margin-bottom: 3px;
+    border: 2px solid rgb(243, 219, 184);
+    padding: 5px;
+    color:rgb(104, 67, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    background-color: rgb(243, 219, 184);
 }
 
+li:hover{
+    border-color: rgb(241, 181, 89);
+}
 
+ul{
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+}
