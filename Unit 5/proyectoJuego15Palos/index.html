@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" type="module"></script>
+    
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Juego de los 15 Palos</title>
+</head>
+<body>
+    <header><h1>Juego de los 15 palos</h1></header>
+    <h3>Instrucciones:</h3>
+    <p>En este juego solo pueden jugar 2 personas. Hay 15 palos de forma que, en la primera fila se colocan 3, en la segunda 5 y en la tercera 7. En cada turno el jugador correspondiente elige una fila y quita los palos que quiera. El jugador que quite el último palo pierde.</p>
+    <div>
+        <div>
+            <label for="jug1">Jugador 1</label><br>
+            <input type="text" id="jug1"><br>
+            <label for="jug2">Jugador 2</label><br>
+            <input type="text" id="jug2"><br>
+            <button id="jugNuevo">Crear jugadores</button>
+        </div>
+        
+        <div id="d">
+            <h3>Puntuación</h3>
+            <p></p>
+            <p></p>
+        </div>
+        <p id="mensaje"></p>
+    </div>
+    <table>
+        <tbody>
+            <tr></tr><tr></tr><tr></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><button>Quitar</button></td>
+                <td colspan="3"><button>Jugar de nuevo</button></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(255, 209, 124);
+    margin: 20px;
+}
+h1{
+    text-align: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+img:hover{
+    box-shadow: 2px 2px 2px 2px #ff8a0d;
+}
+table{
+    table-layout: fixed;
+    margin: auto;
+       
+}
+td{
+    text-align: center;
+    height: 100px;
+    width: 100px;    
+}
+td button{
+    width: 200px;
+    height: 40px;
+}
+button{
+    width: 150px;
+    font-size: 15px;
+    background-color: #7b4206;
+    color: #ffb464;
+    padding: 2px ;
+}
+button:hover{
+    box-shadow: 2px 2px 2px 2px #c56804;
+}
+div button{
+    margin-bottom: 10px;
+}
+input{
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+div{
+    display: inline-block;
+    margin: 10px;
+}
+div div{
+    width: 300px;
+}
+#d{
+    float: right;
+}
+p{
+    display: block;
+}

@@ -1,0 +1,1 @@
+{\"ocupado\":true,\"altern\":['jose1','jose2','jose3']}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Ejemplo AJAX</h1>
+<div id="t">
+
+<button type="button" onclick="peticionAjax()">Change Content</button>
+</div>
+
+<script>
+function peticionAjax() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      //this.readyState-->son los estados de la peticion, eel 4 es el ultimo por lo que para un preload se podria utilizar el 1,2,3
+      //this.status-->el codigo que le llega al navegador del servidor de si hay un error (200 es que ha encotrado el archivo buscado y lo ha enviado)
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("t").innerHTML = this.responseText;
+    }
+  };
+  //true es para que se asincrona sino el codigo se bloquea hasta que se reciba una respuesta
+  xhttp.open("GET", "datos.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
