@@ -1,0 +1,36 @@
+body{
+    background-color: #ffc40067;
+}
+section{
+    background-color: #ffc40033;
+    display: flex;
+    justify-content: center  
+}
+section div{
+    transition: 0.5s ease-in-out;
+    opacity: 0.7;
+    padding: 3px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(143, 60, 1);
+    margin:10px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    background-color: #ff58334d
+}
+div:hover{
+    opacity: 1;
+    box-shadow: 2px 2px 2px 2px #ff58339c
+}
+
+h1{
+    text-align: center;
+    color: #900c3fb4;
+}
+a:link, a:visited, a:active {
+    
+    text-decoration:none;
+}
