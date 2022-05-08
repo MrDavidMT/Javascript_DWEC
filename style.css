@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body{
@@ -24,6 +25,7 @@ header{
 }
 header h1{
     order: 1;
+    font-size: calc(2rem + 2vw);
 }
 header>div{
     height: 3rem;
@@ -105,11 +107,11 @@ footer a,footer a:visited{
 
 footer i{
     margin-left: 0.5rem;
-    position: absolute;
     transition: 0.5s;
+    font-size: calc(1.5rem + .5vw);
 }
 footer a:hover i{
-    font-size: 1.2rem;
+    color: black;
 }
 footer a::before{
     content: '';
@@ -122,5 +124,36 @@ footer a::before{
 }
 footer a:hover::before{
    width: 100%;
-    
+}
+p,a{
+    font-size: calc(1rem + 0.5vw);
+}
+section h2{
+    width: 100%;
+    font-size: calc(1rem + 1vw);
+}
+#projects h3{
+    font-size: calc(1rem + 0.7vw);
+    padding-bottom: 1rem;
+}
+#projects img{
+    width: 100%;
+    object-fit: cover;
+}
+#projects>p{
+    width: 100%;
+}
+#projects{
+    row-gap: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+#projects a{
+    flex: 1 1 300px;
+    padding: 2rem;
+    box-shadow: 0 0 15px 1px rgb(249, 224, 196);
+}
+#projects a:hover{
+    box-shadow: 0 0 15px 3px rgb(240, 199, 152);
 }
