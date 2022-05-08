@@ -13,5 +13,6 @@ https://mrdavidmt.github.io/Javascript_DWEC/
 - Unidad 3: Funciones, arrays y objetos.
 - Unidad 4: Eventos y formularios.
 - Unidad 5: DOM.
+- Unidad 6: Mecanismos de comunicación asíncrona.
 
 ***
