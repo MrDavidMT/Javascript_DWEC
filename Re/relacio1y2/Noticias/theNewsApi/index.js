@@ -31,7 +31,7 @@ window.onload=()=>{
         $('nav').slideToggle(500)
         if($(this).attr('class').indexOf('menu-open')!=-1){
             $('nav').css('display','grid')
-            if(((categorias.length==news.categoriaPedidas)?!categorias.every(q=>news.categoriaPedidas.some(w=>w==q)):true)|| news.paramTipoPedido!=paramTipo){
+            if(((categorias.length==news.categoriaPedidas.length)?!categorias.every(q=>news.categoriaPedidas.some(w=>w==q)):true)|| news.paramTipoPedido!=paramTipo){
                 limpiaNoticias()
                 busqueda()
             }
@@ -43,7 +43,7 @@ window.onload=()=>{
         $(this).css('color',($(this).css('color')=='rgb(255, 255, 255)')?'rgb(240, 230, 140)':'rgb(255, 255, 255)')
         $(this).children('i').toggleClass('fa-angle-down')
         $(this).children('i').toggleClass('fa-angle-up')      
-        if((($('h1').css('display')=='block')&&($(this).children('i').attr('class')=='fas fa-angle-down'))&&( ((categorias.length==news.categoriaPedidas)?!categorias.every(q=>news.categoriaPedidas.some(w=>w==q)):true)|| news.paramTipoPedido!=paramTipo)){
+        if((($('h1').css('display')=='block')&&($(this).children('i').attr('class')=='fas fa-angle-down'))&&( ((categorias.length==news.categoriaPedidas.length)?!categorias.every(q=>news.categoriaPedidas.some(w=>w==q)):true)|| news.paramTipoPedido!=paramTipo)){
             limpiaNoticias()
             busqueda()
         }
