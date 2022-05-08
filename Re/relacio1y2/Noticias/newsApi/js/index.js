@@ -77,7 +77,7 @@ function abrirCerrarMenu(){
     }else{
         filtro.parentNode.style.cssText='display:none'
         //Si al cerrar el menu los parametros utilizados en la ultima busqueda son los mismos no se realiza la peticion        
-        if( !news.filtroDominios.every(q=>news.paramDominio.some(w=>w==q))){
+        if( (news.filtroDominios.length==news.paramDominio.length)?!news.filtroDominios.every(q=>news.paramDominio.some(w=>w==q)):true){
             document.querySelector('section').remove()
             document.querySelector('body').appendChild(document.createElement('section'))
             news.pageN=1;
