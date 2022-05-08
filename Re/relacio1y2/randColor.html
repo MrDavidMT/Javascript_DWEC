@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejer2.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+        }
+        #encabezado{
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            box-shadow: 0 0 10px 1px;
+        }
+        #encabezado>p{
+            color: rgb(33, 157, 211);
+        }
+        #encabezado p{transition: all 0.6s;}
+        #encabezado p:hover{
+            color: rgb(33, 157, 211);
+        }
+        p{
+            font-size: calc(1rem + 0.4vw);
+            padding: 0 0.5rem;
+            display: inline;
+        }
+        #cuerpo{
+            height: 90vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #E5E9EC;
+        }
+        h1{
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(42, 43, 46);
+        }
+        h1 span{ color: rgb(74, 165, 245);}
+        button{
+            border-style: none;
+            border: 1px solid black;
+            margin-top: 1rem;
+            border-radius: 5px;
+            background: none;
+            padding: 0.3rem 0.5rem;
+            transition: all 0.5s;
+            width: max-content;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="encabezado">
+        <p>Color Flipper</p>
+        <div>
+            <p>Simple</p>
+            <p>Hex</p>
+        </div>
+    </div>
+    <div id="cuerpo">
+        <h1>Background Color: <span>#E5E9EC</span></h1>
+        <button>Click Me</button>
+    </div>
+    
+</body>
+</html>

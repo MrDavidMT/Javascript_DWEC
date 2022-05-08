@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="countDown.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+        }
+        section{
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        section>div{
+            flex: 1 1 30rem;
+            padding: 1rem 2rem ;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        h1{
+            padding-bottom:1rem ;
+            color: hsl(205, 72%, 37%);
+        }
+        p{
+            padding: 2rem 0;
+            color: hsl(209, 23%, 60%);
+        }
+        section div div{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+            
+        }
+        section div div div{
+            background: #063251;
+            padding: 1rem;
+            color: white;
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            justify-content: space-between;
+        }
+        h3{
+            font-size: calc(1rem + 1vw);
+            
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <img src="img/gift.jpeg" alt="">
+        </div>
+        <div>
+            <h1>OLD IPHONE GIVEAWAY </h1>
+            <h4>Giveaway Ends On Friday,15 April 2022 11:30am</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit molestiae cum libero atque ut voluptate qui consectetur aliquid incidunt voluptatem quos, dolore, non commodi quaerat aliquam eligendi, quisquam totam blanditiis.</p>
+            <div>
+                <div>
+                    <h3></h3>
+                    <span>DAYS</span>
+                </div>
+                <div>
+                    <h3></h3>
+                    <span>HOURS</span>
+                </div>
+                <div>
+                    <h3></h3>
+                    <span>MINS</span>
+                </div>
+                <div>
+                    <h3></h3>
+                    <span>SECS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

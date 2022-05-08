@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+a,a:link,a:visited{
+    text-decoration: none;
+    color: rgba(59, 59, 150, 0.448);
+}
+a:hover{
+    color: rgb(59, 59, 150);
+}
+h1{
+    display: none;
+    grid-column: 2;
+    
+    text-align: center;
+}
+h1, header div i{
+    font-size: calc(2rem + 2vw);
+}
+
+ul{
+    list-style: none;
+}
+li,label,h3,h3 i,nav{
+    font-size: calc(1rem + 1vw);
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 i{
+    margin-left:1rem;
+}
+header div i:hover{
+    color: #f0e68c;
+}
+header>div:nth-child(3){
+    display: grid;
+    grid-template-columns: 90% auto;
+    position: relative;
+    gap: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: rgb(59, 59, 150);
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    
+    top: 0;
+}
+header div i{
+    order: 1;
+}
+header div input{
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+header{
+    display: grid;
+    grid-template-columns:8rem  auto 8rem;
+    grid-template-rows: 10rem;
+    grid-auto-rows: auto;
+    background-color: rgb(59, 59, 150);
+    color: white;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+a,a:link,a:visited{
+    text-decoration: none;
+}
+header>a{
+    height: 100%;
+    display: block;
+    padding:0.5rem 1rem;
+}
+header img{
+    border-radius: 50%;
+    height: 100%;
+    
+    object-fit: cover;
+    
+}
+
+.menu{
+    height: 4rem;
+    width: 4rem;
+    display: grid;
+    place-content: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+.menu div{
+    position: relative;
+    transition: all 0.5s;
+}
+.menu div, .menu div::before, .menu div::after{
+    height: 0.35rem;
+    width: 3.5rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+.menu:hover div, .menu:hover div::before, .menu:hover div::after{
+    background-color: #f0e68c;
+}
+.menu div::before, .menu div::after{
+    content: '';
+    position: absolute;
+}
+.menu div::before{
+    transform: translateY(-10px);
+}
+.menu div::after{
+    transform: translateY(10px);
+}
+
+.menu-open div{
+    transform: rotate(45deg);
+}
+.menu-open div::before{
+    
+    transform: rotate(90deg);
+}
+.menu-open div::after{
+    transform: scale(0);
+}
+
+nav label:first-child{
+    color: #f0e68c;
+}
+
+input{
+    display: none;
+}
+
+nav{
+    grid-column: span 3;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+nav h3,nav ul{
+    grid-column: span 2;
+}
+nav h3{
+    border-top: 2px solid white;
+    
+}
+label{
+    border-top: 2px solid white;
+}
+label, h3,li{
+    padding: 1rem;
+    transition: all .5s;
+}
+label:hover, h3:hover,li:hover{
+    box-shadow: inset 0 0 5px 1px white;
+}
+nav li{
+   
+    position: relative;
+    
+    border-right: 2px solid white;
+}
+nav ul{
+    border-top: 2px solid white;
+    display: none;
+    grid-template-columns: repeat(auto-fit,minmax(22.6rem,1fr));
+}
+li::after{
+    content: '';
+    background-color: #f0e68c;
+    height: 3px;
+    transition: all .5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+}
+li:hover::after{
+    transition: all .5s;
+    width: 100%;
+}
+section p,article a{
+    font-size: calc(1rem + 0.7vw);
+}
+article h3{
+    font-size: calc(1rem + 1.3vw);
+}
+section>p{
+    color: rgb(59, 59, 150);
+    width: 100%;
+}
+section{
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    
+    gap: 3rem;
+}
+article{
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(59, 59, 150, 0.448);
+    padding: 2rem;
+    display: grid;
+    column-gap: 3rem;
+    grid-template-rows: repeat(4,auto);
+
+}
+
+article img{
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 5px;
+    
+    justify-self: center;
+    align-self: center;
+}
+input[type="search"]{
+    position: relative;
+}
+
+.spin{
+    display: none;
+    border:5px solid rgba(59, 59, 150, 0.448);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-left-color:#f0e68c;
+    position: fixed;
+    top: 48vh;
+    left: 48vw;
+}
+.arrow{
+    display: none;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: max-content;
+}
+.arrow a{
+    display: block;
+}
+.arrow i{
+    opacity: 0.5;
+    color: rgb(59, 59, 150);
+    font-size: 4rem;
+    transition: all 0.5s;
+}
+.arrow i:hover{
+    opacity: 1;
+}
+
+input[type="search"]:invalid{
+    color: red;
+}
+
+@keyframes spin {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@media all and (min-width:768px) {
+    nav{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+    }
+    nav ul{
+        grid-column: span 3;
+    }
+    nav h3{
+        grid-column: span 1;
+    }
+    header{
+        grid-template-columns:12rem  2fr 1fr;
+    }
+    .menu{
+        display: none;
+    }
+    h1{
+        display: block;
+        
+    }
+    header>a{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #s{
+        display: none;
+    }
+    header div{
+        grid-column: 3;
+        width: 100%;
+    }
+    header div input{
+        
+        display: block;
+        
+        grid-row: 1;
+       
+    }
+    article{
+        grid-template-columns: auto 30%;
+    }
+    article img{
+        grid-column: 2;
+        grid-row: 1/-1;
+    }
+    
+}
+@media all and(min-width:1000px) {
+    
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="groceryList.js"></script>
+    <script src="https://kit.fontawesome.com/842e46fd94.js" crossorigin="anonymous"></script>
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 2rem;
+            color:hsl(205, 86%, 17%)
+        }
+        .alert,h1{
+            border-radius: 5px;
+            text-align: center;
+        }
+        .alert,h1,div,li{
+            margin-bottom:0.5rem ;
+        }
+        .alert{
+            height: 1.3rem;
+            
+        }
+        ul{
+            list-style: none;
+        }
+        section{
+            display: flex;
+            flex-flow: column;
+            width: max(20rem, 40vw);
+            border-radius: 5px;
+            padding: 2rem;
+            box-shadow: 0 0 10px 1px #a4a3a3;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: all 0.5s;
+        }
+        section:hover{
+            box-shadow: 0 0 25px 5px #a4a3a3;
+        }
+        button{
+            width: max-content;
+            border-style: none;
+        }
+        div{
+            display: flex;
+            flex-flow: row;
+        }
+        div,ul,.alert{
+            width: 100%;
+        }
+        input::placeholder{
+            color: hsl(210, 22%, 49%);
+        }
+        input{
+            border-style: none;
+            border-radius: 5px 0 0 5px;
+            width: 100%;
+            color: hsl(210, 22%, 49%);
+            padding:  0.3rem 0.7rem;
+            background-color: hsl(210, 36%, 96%);
+            
+        }
+        input:focus-within{
+            background: white;
+            border-color:  #49a6e9;
+        }
+        div button{
+            padding: 0.3rem;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            color: hsl(209, 61%, 16%);;
+            background-color:hsl(205, 86%, 81%);
+            transition: all 0.5s;
+        }
+        div button:hover{
+            background-color: #49a6e9; 
+            color: white;
+        }
+        p{
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+        li{
+            display: flex;
+            flex-flow: row;
+            padding: 0.3rem;
+            border-radius: 5px;
+            transition: all 0.5s;
+        }
+        li p{
+            width: 100%;
+        }
+        li:hover{
+            background-color: hsl(210, 36%, 96%);
+        }
+        .edit{
+            color: hsl(125, 71%, 66%);
+            margin-right:0.5rem ;
+            transition: all 0.5s;
+        }
+        .edit:hover{
+            color: hsl(125, 67%, 44%);
+        }
+        .delete,section>button{
+            color:hsl(360, 71%, 66%);
+            transition: all 0.5s;
+        }
+        .delete:hover,section>button:hover{
+            color:hsl(360, 67%, 44%) ;
+        }
+        button{
+            background-color: transparent;
+        }
+        section>button{
+            visibility: hidden;
+        }
+
+        
+        .alert-danger {
+            color: #721c24;
+            background: #f8d7da;
+        }
+        .alert-success {
+            color: #155724;
+            background: #d4edda;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <section>
+        <p class="alert"></p>
+        <h1>Grocery Bud</h1>
+        <div>
+            <input type="text" placeholder="e.g eggs">
+            <button>Submit</button>
+        </div>
+        <ul>
+            
+        </ul>
+        <button>Clear Items</button>
+
+    </section>
+</body>
+</html>
